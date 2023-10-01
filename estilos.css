@@ -7,4 +7,81 @@
   margin-bottom: 40px !important;
 }
 
+button{
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;  
+}
+.contact_form{	
+	width: 80%; 
+  height: auto;
+  margin: 20px auto;
+	border-radius: 10px;  
+	padding-top: 5px;
+	padding-bottom: 5px;  
+  background-color: #00B9EE; 
+  padding-left: 5px; 
+  text-align: center;
+  
+  }
+
+
+input{	
+	width: 90%; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 	
+	margin-top: 5px;  
+	padding-left: 5px;
+  margin-bottom: 5px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 90%; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px;  
+	margin-top: 5px;  
+	padding-left: 5px;
+  margin-bottom: 5px; 
+  padding-top: 5px; 
+}
+label{
+  display: block; 
+	float: center; 	
+}
+
+button p{
+	color: white;
+  font-size: 25px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
