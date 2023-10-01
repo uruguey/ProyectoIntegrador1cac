@@ -11,13 +11,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="estilos.css">
-
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo eh imagen-03.png">
     <title>Tierra de Juguetes</title>
 </head>
 
 <div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="inicio">
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
             <div class="container"><a class="navbar-brand" href="#"> <img src="img/Recurso 2.png" width="250"
                         height="95" alt="logo"></a>
@@ -203,57 +203,108 @@
             <div class="col-md-6">
                 <div class="card-body">
                     <h1 class="text-center">Contacto</h1>
-                     <div class="contact_form">                       
-                            <form action="#" method="post">
-                                <p><label for="nombre" class="colocar_nombre">Nombre</label>
-                                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                                        placeholder="Nombre">
-                                </p>
+                    <div class="contact_form">
+                        <form action="#" method="post">
+                            <p><label for="nombre" class="colocar_nombre">Nombre</label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Nombre">
+                            </p>
+                            <p>
+                                <label for="email" class="colocar_email">Email</label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                    placeholder="Email">
+                            </p>
+                            <p>
+                                <label for="telefone" class="colocar_telefono">Teléfono</label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Telefono">
+                            </p>
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje</label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                    required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </p>
+                            <button class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">
+                                <p>ENVIAR</p>
+                            </button>
 
-                                <p>
-                                    <label for="email" class="colocar_email">Email</label>
-                                    <input type="email" name="introducir_email" id="email" required="obligatorio"
-                                        placeholder="Email">
-                                </p>
-
-                                <p>
-                                    <label for="telefone" class="colocar_telefono">Teléfono</label>
-                                    <input type="tel" name="introducir_telefono" id="telefono"
-                                        placeholder="Telefono">
-                                </p>                              
-
-                                <p>
-                                    <label for="asunto" class="colocar_asunto">Asunto</label>
-                                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-                                        placeholder="Asunto">
-                                </p>
-
-                                <p>
-                                    <label for="mensaje" class="colocar_mensaje">Mensaje</label>
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
-                                        required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-                                </p>
-
-                                <button class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">
-                                    <p>ENVIAR</p>  </button>                             
-
-                            </form>
-                        </div>
+                        </form>
                     </div>
-
-
                 </div>
+
+
             </div>
         </div>
     </div>
+</div>
 <!-- FOOTER -->
 <div class="container-fluid tarjetas">
+    <footer class="footer-section">
+        <div class="container">
+            <div class="pt-5 pb-5">
+                <div class="row footer">
+                    <div class="col-xl-3 col-md-3 mb-30">
+                        <div class="single-cta">
+                            <div class="cta-text">
+                                <a href="index.html"><img src="img/logo eh imagen-03.png" class="img-fluid"
+                                        alt="logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-30">
+                        <div class="single-cta">
+                            <div class="cta-text">
+                                <h4>Nos encuentras en</h4>
+                                <span>Av. Raúl Alfonsín 231, locales 1 y 2
+                                    <br> Cordoba-Alta gracia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-30">
+                        <div class="single-cta">
+                            <div class="cta-text">
+                                <h4>Llamanos al</h4>
+                                <span>3513142224</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3col-md-3 mb-30">
+                        <div class="single-cta">
+                            <div class="cta-text">
+                                <h4>Nuestro email </h4>
+                                <span>tierradejuguetes@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, All Right Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#inicio">Inicio</a></li>
+                                <li><a href="#">Terminos</a></li>
+                                <li><a href="#">Privacidad</a></li>
+                                <li><a href="#">Politica</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </div>
-
-
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

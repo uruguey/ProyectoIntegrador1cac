@@ -1,12 +1,12 @@
 .carousel-item img{
     width: auto;
-  height: 550px;    
+  height: 700px;    
 }
 .tarjetas{
   max-width: 100%;
   margin-bottom: 40px !important;
 }
-
+/* Formulario */
 button{
   width: 50%;
   height: 50px;
@@ -21,11 +21,8 @@ button{
 	padding-bottom: 5px;  
   background-color: #00B9EE; 
   padding-left: 5px; 
-  text-align: center;
-  
+  text-align: center;  
   }
-
-
 input{	
 	width: 90%; 
 	height: 40px; 
@@ -36,8 +33,6 @@ input{
 	padding-left: 5px;
   margin-bottom: 5px; 
 }
-
-
 textarea{
   background-color: #fbfbfb; 
 	width: 90%; 
@@ -54,10 +49,69 @@ label{
   display: block; 
 	float: center; 	
 }
-
 button p{
 	color: white;
   font-size: 25px;   
+}
+/* Footer */
+.footer{
+  text-align: center;
+  align-items: center;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background:#00B9EE;
+position: relative;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color:black;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.cta-text img {
+width: 200px;
+height: auto;
+background-size: cover;
+background-position: 100% 100%;
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color:#00B9EE;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color:#00B9EE;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
 }
 
 
