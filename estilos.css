@@ -2,3 +2,9 @@
     width: auto;
   height: 550px;    
 }
+.tarjetas{
+  max-width: 100%;
+  margin-bottom: 40px !important;
+}
+
+
