@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
     <!-- Required meta tags -->
@@ -13,18 +13,20 @@
     <link rel="stylesheet" href="estilos.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/logo eh imagen-03.png">
+    <script  defer src="script.js"></script>
     <title>Tierra de Juguetes</title>
 </head>
 
 <div>
-    <div class="container-fluid" id="inicio">
-        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-            <div class="container"><a class="navbar-brand" href="#"> <img src="img/Recurso 2.png" width="250"
+    <div class="container-fluid" id="inicio">      
+        
+            <nav class="navbar  navbar-expand-lg nav-fondo">
+            <div class="container"><a class="navbar-brand" href="#"> <img src="img/Recurso1.png" width="250"
                         height="95" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon " ></span>                   
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,21 +44,23 @@
                                 style="font-size: 1.2rem;">
                                 Nosotros
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-center" href="#contacto"
+                            <div class="dropdown-menu menu-des" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-center color-letter" href="#contacto"
                                     style="font-size: 1.2rem;">Contacto</a>
-                                <a class="dropdown-item text-center" href="https://www.instagram.com/tierradejuguetes/"
+                                <a class="dropdown-item text-center color-letter" href="https://www.instagram.com/tierradejuguetes/"
                                     style="font-size: 1.2rem;" target="_blank">Instagram</a>
 
                             </div>
                         </li>
-                    </ul>
+                    </ul>                    
+                </div>                
                 </div>
-            </div>
+            <button class="light-mode" style="outline: none;"><img src="img/sol.png" alt="solcito"></button>
+            <button class="dark-mode" style="outline: none;" ><img src="img/luna.png" alt="lunita"></button>
         </nav>
     </div>
     <!-- CAROUSEL -->
-    <div class="container-fluid tarjetas">
+    <div class="container-fluid back-carrusel">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -108,13 +112,14 @@
         </div>
 
     </div>
+    <!-- CARDS -->
     <div class="container-fluid tarjetas">
         <div class="text-center" id="novedades">
             <h1>Ultimas Novedades</h1>
         </div>
         <div class="card-deck">
-            <div class="card">
-                <img src="img/hotwheels.jpg" class="card-img-top" alt="...">
+            <div class="card background-cards">
+                <img src="img/Recurso 3.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Ataque de Escorpión Flexible - Hot Wheels</h5>
                     <p class="card-text">Sven el Escorpión, con su cola de 76,2 cm como pista, es una fuente inagotable
@@ -124,8 +129,8 @@
                         target="_blank" class="btn btn-primary  ">Ir al sitio</a>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/crybabes.jpg" class="card-img-top" alt="...">
+            <div class="card background-cards">
+                <img src="img/Recurso 4.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Cry Babies Magic Tears - Icy World</h5>
                     <p class="card-text">La casita de los mini Bebés Llorones se transforma en un armario congelado por
@@ -135,8 +140,8 @@
                         target="_blank" class="btn btn-primary">Ir al sitio</a>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/spiderman.jpg" class="card-img-top" alt="...">
+            <div class="card background-cards">
+                <img src="img/Recurso 5.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Monopoly Spiderman - Hasbro Gaming +8</h5>
                     <p class="card-text">Esta versión del clásico juego Monopoly cuanta con diseño, personajes y temas
@@ -149,7 +154,7 @@
     </div>
 </div>
 <!-- CARD E IMAGEN -->
-<div class="container-fluid">
+<div class="container-fluid card">
     <div class="card mb-3 tarjetas">
         <div class="row no-gutters">
             <div class="col-md-6">
@@ -157,7 +162,7 @@
                     <a class="nav-link"
                         href="https://caij.org.ar/ejes-de-trabajo/valoracion-del-juguete/la-importancia-de-los-juguetes-y-el-juego/"
                         target="_blank">
-                        <h3 class="card-title text-center" style="text-decoration: none;color:black">"La Importancia del
+                        <h3 class="card-title text-center titulo-card" >"La Importancia del
                             juego y los juguetes"</h3>
                     </a>
                     <p class="card-text" style="font-size: 1.05rem;">A los niños y niñas el juego no sólo les divierte y
@@ -191,7 +196,7 @@
     </div>
 </div>
 <!-- IMAGEN Y MAPA -->
-<div class="container-fluid" id="contacto">
+<div class="container-fluid card" id="contacto">
     <div class="card mb-3 tarjetas">
         <div class="row no-gutters">
             <div class="col-md-6">
@@ -280,7 +285,7 @@
             </div>
 
         </div>
-        <div class="copyright-area">
+        <div class="copyright-area back-fo">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
@@ -306,6 +311,7 @@
 
 </div>
 <!-- Optional JavaScript -->
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

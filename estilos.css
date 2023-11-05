@@ -1,10 +1,124 @@
+:root{
+  --background-color: white;
+  --text-color: black;
+}
+:root[data-theme="dark"]{
+  --background-color: #252525;
+  --text-color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--background-color);
+  transition: 0.5 ease-in-out;
+  color: var(--text-color);
+}
+input[type="checkbox"]{
+  position: relative;
+  width: 50px;
+  height: 20px;
+  background-color:#7bd2f4;
+  border-color: #7bd2f4;
+  appearance: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5 ease;
+}
+input[type="checkbox"]:checked{  
+  background-color:#0063c5; 
+  border-color: #0063c5;
+}
+input[type="checkbox"]::before{  
+  content: " "; 
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-color: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.7s ease;
+}
+input[type="checkbox"]:checked::before{  
+  transform: translateX(29px);  
+}
+/* nav bar */
+.nav-fondo{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  
+}
+.nav-link{
+  color: var(--text-color) !important;
+}
+.menu-des{
+  background-color: var(--background-color);
+}
+.color-letter{
+  color: var(--text-color);
+}
+.dark-mode, .light-mode{
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;  
+ }
+ .navbar button{
+  width: 10%;
+  height: 10%;
+  }
+.light-mode img{
+  width: 60px;
+  height: 60px;
+}
+.dark-mode img{  
+  width: 45px;
+  height: 45px;
+}
+:root[data-theme="light"] .light-mode{
+  display: none;
+}
+:root[data-theme="dark"] .dark-mode{
+  display: none;
+}
+/* carrusel */
 .carousel-item img{
     width: auto;
   height: 700px;    
 }
+.back-carrusel{
+  background-color: var(--background-color);
+  max-width: 100%;
+  margin-bottom: 40px !important;
+}
 .tarjetas{
   max-width: 100%;
   margin-bottom: 40px !important;
+  background-color: var(--background-color);
+}
+/* cards */
+.background-cards{
+  background-color: var(--background-color);
+  border: var(--background-color);
+}
+.titulo-card{
+  text-decoration: none;
+  color:var(--text-color);
+}
+.card{
+  border:var(--background-color);
+  background-color: var(--background-color);
+}
+.card-deck img{
+  width: 50%;
+  height: 50%;
+  margin-left: 110px;
 }
 /* Formulario */
 button{
@@ -108,10 +222,15 @@ margin-left: 20px;
 }
 .footer-menu li:hover a{
 color:#00B9EE;
+text-decoration: none;
+
 }
 .footer-menu li a {
 font-size: 14px;
 color: #878787;
+}
+.back-fo{
+  background-color: var(--background-color);
 }
 
 
