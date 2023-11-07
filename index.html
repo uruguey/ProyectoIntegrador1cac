@@ -199,12 +199,13 @@
 <div class="container-fluid card" id="contacto">
     <div class="card mb-3 tarjetas">
         <div class="row no-gutters">
-            <div class="col-md-6">
+            <div class="col-md-6 chancho">
+                <img src="img/chancho.png" alt="ahorro">
 
             </div>
             <div class="col-md-6">
                 <div class="card-body">
-                    <h1 class="text-center">Calcula Aqui!!!</h1>
+                    <h1 class="text-center">Calcula aqui tu Compra!!!</h1>
                     <div class="contact_form">
                         <form action="#" method="post">
                             <p><label for="importe">Importe</label>
@@ -227,12 +228,21 @@
                                     <option value="seis">6 cuotas</option>
                                 </select>
                             </p>
-                            <p class="pagar" id="totalAPagar">Total a Pagar: $</p>
-                           <div class="button"><button class="btn btn-cal" style="background-color: #96c93e;"
-                            type=" button" id="borrar">Borrar</button>
-                        <button class="btn btn-cal" style="background-color: #96c93e;"
-                            type=" button" id="resumen">Resumen</button></div> 
+                            <p>
+                                <label for="pago">Bancos</label>
+                                <select id="banco" class="categoria" style="outline: none">
+                                    <option value="santander">Santander Rio</option>
+                                    <option value="bancarizada">Bancarizada</option>
+                                    <option value="no-bancarizada">No Bancarizada</option>
 
+                                </select>
+                            </p>
+                            <p class="pagar" id="totalAPagar">Total a Pagar: $</p>
+                            <button class="btn btn-cal" style="background-color: #96c93e;" type=" button"
+                                id="resumen">Resumen</button>
+                            <button class="btn btn-cal" style="background-color: #96c93e;" type=" button"
+                                id="borrar">Borrar</button>
+                            
                         </form>
                     </div>
                 </div>

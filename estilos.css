@@ -121,6 +121,10 @@ input[type="checkbox"]:checked::before{
   margin-left: 110px;
 }
 /*calculo beneficios*/
+.chancho img{
+  width: 100%;
+  height: 100%;
+}
 .btn-cal{
  width: 30%;
   margin:auto;
